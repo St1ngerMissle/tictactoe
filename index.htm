@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>tic-tac-toe</title>
+		<style>
+			#board {
+				width: 360px;
+				height: 360px;
+				border-collapse: collapse;
+				table-layout: fixed;
+				margin: auto;
+			} .cell {
+				height: 120px;
+				width: 120px;
+				max-height: 120px;
+				max-width: 120px;
+				text-align: center;
+				vertical-align: middle;
+				font-size: 60px;
+			} #resetBtn {
+				width: 60px;
+				height: 40px;
+			} 
+			#c4 { border: 2px solid black; } 
+			.rB { border-right: 2px solid black; }
+			.bB { border-bottom: 2px solid black; }
+			.tB { border-top: 2px solid black; }
+			.lB { border-left: 2px solid black; }
+		</style>
+	</head>
+	<body style="text-align: center">
+		<table id="board">
+			<tbody>
+				<tr id="r0" class="row">
+					<th class="cell rB" id="c0"></th>
+					<th class="cell rB" id="c1"></th>
+					<th class="cell bB" id="c2"></th>
+				</tr>
+				<tr id="r1" class="row">
+					<th class="cell tB" id="c3"></th>
+					<th class="cell" id="c4"></th>
+					<th class="cell bB" id="c5"></th>
+					</tr>
+				<tr id="r2" class="row">
+					<th class="cell tB" id="c6"></th>
+					<th class="cell lB" id="c7"></th>
+					<th class="cell lB" id="c8"></th>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+		<button id="resetBtn" onclick="clearBoard()">reset</button>
+		<script src="main.js"></script>
+	</body>
+</html>
